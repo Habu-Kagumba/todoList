@@ -1,3 +1,0 @@
-eval File.read(File.expand_path('../Gemfile', __FILE__))
-@dependencies.delete @dependencies.find { |d| d.name == 'rapid_runty' }
-gem 'rapid_runty', path: '~/Projects/rapid_runty'
