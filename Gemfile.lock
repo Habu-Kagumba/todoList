@@ -1,0 +1,24 @@
+GIT
+  remote: https://bitbucket.org/habu_kagumba/rapid_runty.git
+  revision: 315e6b83058c403adabe3ef3caca5dbac027fcc5
+  branch: ft-framework-controller-#127863703
+  specs:
+    rapid_runty (0.1.1)
+      bundler (~> 1.12)
+      rack (~> 2.0)
+      thor (~> 0.19)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rack (2.0.1)
+    thor (0.19.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rapid_runty!
+
+BUNDLED WITH
+   1.12.4
