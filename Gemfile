@@ -1,3 +1,3 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "rapid_runty"
+gem 'rapid_runty'
