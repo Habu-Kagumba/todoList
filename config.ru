@@ -1,3 +1,6 @@
-require "./config/application"
+require_relative './config/application'
+TodoListApplication = TodoList::Application.new
 
-run TodoList::Application.new
+require_relative './config/routes'
+
+run TodoListApplication
