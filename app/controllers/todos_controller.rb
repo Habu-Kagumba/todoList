@@ -1,5 +1,14 @@
-class TodosController < RapidRunty::Controller
+class TodosController < RapidRunty::BaseController
   def index
-    'This is the index view'
+    @todos = []
+    render
+  end
+
+  def new
+    redirect_to '/'
+  end
+
+  def show
+    JSON.dump params
   end
 end

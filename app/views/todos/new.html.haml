@@ -1,0 +1,18 @@
+%h1 New Todo
+%form#new-todo{:action => "/todo", :method => "post"}
+  %p
+    %label{:for => "title"} Title
+    %br/
+    %input{:name => "title", :type => "text"}/
+  %p
+    %label{:for => "body"} Body
+    %br/
+    %input{:name => "body", :type => "text"}/
+  %p
+    %input#pending{:checked => "checked", :name => "status", :type => "radio", :value => "Pending"}/
+    Pending
+    %br/
+    %input#done{:name => "status", :type => "radio", :value => "Done"}/
+    Done
+    %br/
+  %button{:type => "submit"} Submit

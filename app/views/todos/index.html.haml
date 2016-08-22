@@ -1,0 +1,10 @@
+%h1 My Todos
+- @todos.each do |todo|
+  %p
+    %strong= todo.title
+    %em= todo.status
+    %a{:href => "/todo/#{todo.id}", :id => "todo_#{todo.id}"} Show
+    |
+    %a{:href => "/todo/#{todo.id}/edit"} Edit
+%p
+  %a{:href => "/todo/new"} New Todo
