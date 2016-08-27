@@ -1,10 +1,9 @@
 %h1= @todo.title
 %p= @todo.body
-%p= @todo.status
-%form{:action => "/todo/#{@todo.id}", :method => "post"}
-  %input.form-control{:name => "_method", :type => "hidden", :value => "delete"}/
+%form{:action => "/todos/#{@todo.id}", :method => "post"}
+  %input{:name => "_method", :type => "hidden", :value => "delete"}
   %p
-    %a{:href => "/todo/#{@todo.id}/edit"} Edit
+    %a{:href => "/todos/#{@todo.id}/edit"} Edit
     |
-    %a{:href => "/todo"} My Todos
+    %a{:href => "/todos"} All Todos
   %button{:type => "submit"} Delete

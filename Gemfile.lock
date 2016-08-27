@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/Habu-Kagumba/todoList.git
-  revision: be1f9b0bbf8154d1369a523ffe8f77323face9e1
-  branch: ch-refactoring-#128767859
+  revision: d86688403aa89dea8b9ed6330abbf7598048433a
+  branch: ft-orm-#128742511
   specs:
-    rapid_runty (0.1.2)
+    rapid_runty (0.1.3)
       bundler (~> 1.12)
       rack (~> 2.0)
       sqlite3 (~> 1.3)

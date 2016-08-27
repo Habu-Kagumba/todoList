@@ -1,27 +1,12 @@
 %h1 Edit Todo
-%form#edit-todo{:action => "/todo/"}
-= @todo.id
-" method="post"&gt;
-%input{:name => "_method", :type => "hidden", :value => "put"}/
-%p
-  %label{:for => "title"} Title
-  %br
-    %input{:name => "title", :type => "text", :value => ""}/
-    = @todo.title
-    "&gt;
-  %p
-    %label{:for => "body"} Body
-    %br
-      %input{:name => "body", :type => "text", :value => ""}/
-      = @todo.body
-      "&gt;
+%form{:action => "/todos/#{@todo.id}", :method => "post"}
+  %input{:name => "_method", :type => "hidden", :value => "put"}
     %p
-      %input#pending{:name => "status", :type => "radio", :value => "Pending"}/
-      = 'checked' if @todo.status == 'Pending'
-      \&gt; Pending
-      %br
-        %input#done{:name => "status", :type => "radio", :value => "Done"}/
-        = 'checked' if @todo.status == 'Done'
-        \&gt; Done
-        %br
-        %button{:type => "submit"} Update
+      %label{:for => "title"} Title
+      %br/
+      %input{:name => "title", :type => "text", :value => "#{@todo.title}"}/
+    %p
+      %label{:for => "body"} Body
+      %br/
+      %input{:name => "body", :type => "text", :value => "#{@todo.body}"}/
+    %button{:type => "submit"} Update

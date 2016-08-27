@@ -6,6 +6,7 @@ TodoListApplication = TodoList::Application.new
 require_relative './config/routes'
 
 use Rack::Static, root: 'public', urls: ['/images', '/js', '/css']
+use Rack::MethodOverride
 use Rack::ContentLength
 use Rack::Reloader, 0
 

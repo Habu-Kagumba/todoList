@@ -2,9 +2,8 @@
 - @todos.each do |todo|
   %p
     %strong= todo.title
-    %em= todo.status
-    %a{:href => "/todo/#{todo.id}", :id => "todo_#{todo.id}"} Show
+    %a{:href => "/todos/#{todo.id}", :id => "todo_#{todo.id}"} Show
     |
-    %a{:href => "/todo/#{todo.id}/edit"} Edit
+    %a{:href => "/todos/#{todo.id}/edit"} Edit
 %p
-  %a{:href => "/todo/new"} New Todo
+  %a{:href => "/todos/new"} New Todo
